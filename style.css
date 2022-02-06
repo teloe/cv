@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro&family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather:wght@700&family=Open+Sans&display=swap');
 
 :root {
     /* --accent: #5A7485; */
+    --accent: #4B6C82;
     /* --accent: #6b889b; */
-    --accent: #54B688;
+    /* --accent: #54B688; */
+
+    /* fonts */
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Merriweather', serif;
+    --alt-font: 'IBM Plex Mono', monospace;
 }
 
+/* page setup */
 @media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
     body {
-        font-family: 'Open Sans', sans-serif;
         width: 8.25in;
         height: 11.75in;
         margin: 0 0 0 0;
@@ -21,10 +31,10 @@ html {
 }
 body {
     font-size: inherit;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--primary-font);
 }
 h1, h2, h3 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 700;
     color: var(--accent);
 }
@@ -41,6 +51,7 @@ li {
 a {
     text-decoration:none;
     color: var(--accent);
+    font-family: var(--alt-font);
 }
 ul {
     padding-left:0;
@@ -52,35 +63,30 @@ ul li::before {
     margin-right: .25rem;
 }
 .contact a {
-    font-family: 'Source Code Pro', monospace;
     display:inline-block;
     margin-right: 2rem;
 }
 
-/* .intro */
 .intro h2 {
-    font-family: inherit;
-    /* color: #666; */
-    font-size: 2rem;
+    font-family: var(--alt-font);
+    font-size: 1.75rem;
+    color: inherit;
 }
-
-
+.entry {
+    margin-bottom: 1.5rem;
+}
 .experience .entry .role {
     margin-bottom: 0;
     font-size: 1.25rem;
 }
 
 .date {
-    font-family: 'Source Code Pro', monospace;    
+    font-family: var(--alt-font);
+    margin-bottom: .5rem;
 }
-.date span {
-    color: #666;
-    margin-left: .5rem;
-}
-
-
 .skills h3, 
 .projects h3 {
     font-family: inherit;
     font-size: 1.15rem;
+    color: inherit;
 }
