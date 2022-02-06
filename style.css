@@ -76,7 +76,7 @@ ul li::before {
 }
 .experience .entry .role {
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 .date {
     font-family: var(--alt-font);
@@ -85,6 +85,6 @@ ul li::before {
 .skills h3, 
 .projects h3 {
     font-family: inherit;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: inherit;
 }
