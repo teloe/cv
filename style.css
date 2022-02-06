@@ -66,7 +66,6 @@ ul li::before {
     display:inline-block;
     margin-right: 2rem;
 }
-
 .intro h2 {
     font-family: var(--alt-font);
     font-size: 1.75rem;
@@ -79,7 +78,6 @@ ul li::before {
     margin-bottom: 0;
     font-size: 1.25rem;
 }
-
 .date {
     font-family: var(--alt-font);
     margin-bottom: .5rem;
