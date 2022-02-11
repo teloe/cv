@@ -83,7 +83,8 @@ ul li::before {
     margin-bottom: .5rem;
 }
 .skills h3, 
-.projects h3 {
+.projects h3, 
+.edu h3 {
     font-family: inherit;
     font-size: 1.2rem;
     color: inherit;
