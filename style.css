@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather:wght@400;700&family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500&display=swap');
 
 :root {
     /* --accent: #5A7485; */
-    --accent: #4B6C82;
-    /* --accent: #6b889b; */
-    /* --accent: #54B688; */
+    /* --accent: #4B6C82; */
+    --accent: #647972;
 
     /* fonts */
     --primary-font: 'Open Sans', sans-serif;
@@ -32,10 +33,12 @@ html {
 body {
     font-size: inherit;
     font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: normal;
 }
 h1, h2, h3 {
     font-family: var(--secondary-font);
-    font-weight: 700;
+    /* font-weight: 400; */
     color: var(--accent);
 }
 h1 {
@@ -43,10 +46,14 @@ h1 {
 }
 h3 {
     font-size: 1.5rem;
+    font-weight:500;
 }
 p, 
 li {
     line-height: 1.8;
+}
+strong {
+    font-weight: 500;
 }
 a {
     text-decoration:none;
